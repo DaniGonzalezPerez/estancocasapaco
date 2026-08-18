@@ -14,6 +14,7 @@ import {
   X as CloseIcon,
   MessageCircle,
   Clock,
+  ChevronRight,
 } from 'lucide-react'
 import './App.css'
 
@@ -219,14 +220,20 @@ function Hero() {
           Desayunos, café de siempre, bocadillos y buen ambiente en el corazón de Cerredo.
           Bar, cafetería y estanco en un mismo local, con trato familiar desde siempre.
         </p>
-        <div className="hero__rating">
+        <a
+          href={MAPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero__rating"
+        >
           <span className="hero__stars" aria-hidden="true">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} size={18} strokeWidth={0} fill="currentColor" />
             ))}
           </span>
           <span>4.9 sobre 5 · 30 opiniones en Google</span>
-        </div>
+          <ChevronRight size={16} strokeWidth={2} className="hero__rating-arrow" aria-hidden="true" />
+        </a>
         <div className="hero__actions">
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             <MessageCircle size={18} strokeWidth={1.75} />

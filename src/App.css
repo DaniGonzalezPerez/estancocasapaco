@@ -152,12 +152,33 @@
 }
 
 .hero__rating {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 2rem;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
   font-size: 0.95rem;
   color: var(--color-cream);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.hero__rating:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.32);
+  transform: translateY(-1px);
+}
+
+.hero__rating-arrow {
+  color: rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.hero__rating:hover .hero__rating-arrow {
+  transform: translateX(3px);
+  color: #fff;
 }
 
 .hero__stars {
