@@ -25,6 +25,8 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent
 const ADDRESS = 'Ctra. General-Tablado, s/n, 33812 Cerredo, Asturias'
 const MAPS_URL =
   'https://www.google.com/maps/place/Cafeter%C3%ADa+%22Casa+Paco%22+%2F+Estanco/@42.9459602,-6.4905959,17z'
+const MAPS_REVIEWS_URL =
+  'https://www.google.com/maps/place/Cafeter%C3%ADa+%22Casa+Paco%22+%2F+Estanco/@42.9456068,-6.4921087,17z/data=!4m8!3m7!1s0xd30d53d2f0b4285:0xd7742b3abb75f8b8!8m2!3d42.9459602!4d-6.4905959!9m1!1b1!16s%2Fg%2F11rb4s4hlb'
 
 const NAV_LINKS = [
   { href: '#inicio', label: 'Inicio' },
@@ -221,7 +223,7 @@ function Hero() {
           Bar, cafetería y estanco en un mismo local, con trato familiar desde siempre.
         </p>
         <a
-          href={MAPS_URL}
+          href={MAPS_REVIEWS_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="hero__rating"
