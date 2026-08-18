@@ -39,7 +39,7 @@ const HOURS = [
   { day: 'Jueves', short: 'Jue', ranges: [['7:45', '21:30']] },
   { day: 'Viernes', short: 'Vie', ranges: [['7:45', '21:30']] },
   { day: 'Sábado', short: 'Sáb', ranges: [['8:30', '14:00']] },
-  { day: 'Domingo', short: 'Dom', ranges: [['7:45', '14:00'], ['17:00', '21:30']] },
+  { day: 'Domingo', short: 'Dom', ranges: [['8:30', '14:00'], ['17:00', '21:30']] },
 ]
 
 const HIGHLIGHTS = [
@@ -161,12 +161,15 @@ function Header() {
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
       <div className="container header__inner">
         <a href="#inicio" className="header__brand" onClick={closeMenu}>
-          <span className="header__brand-icon" aria-hidden="true">
-            <Coffee size={22} strokeWidth={1.75} />
-          </span>
+          <img
+            src={`${import.meta.env.BASE_URL}logo.svg`}
+            alt=""
+            className="header__brand-icon"
+            aria-hidden="true"
+          />
           <span>
             Casa Paco
-            <small>Cafetería &amp; Estanco</small>
+            <small>Bar &amp; Estanco</small>
           </span>
         </a>
 
@@ -211,7 +214,7 @@ function Hero() {
       <div className="hero__overlay" />
       <div className="container hero__content">
         <span className="eyebrow eyebrow--light">Cerredo · Degaña · Asturias</span>
-        <h1>Cafetería "Casa Paco" / Estanco</h1>
+        <h1>Bar Estanco Casa Paco</h1>
         <p className="hero__lead">
           Desayunos, café de siempre, bocadillos y buen ambiente en el corazón de Cerredo.
           Bar, cafetería y estanco en un mismo local, con trato familiar desde siempre.
@@ -413,7 +416,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div>
-          <strong>Cafetería "Casa Paco" / Estanco</strong>
+          <strong>Bar Estanco Casa Paco</strong>
           <p>{ADDRESS}</p>
         </div>
         <p className="footer__copy">

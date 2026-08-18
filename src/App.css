@@ -39,8 +39,11 @@
 }
 
 .header__brand-icon {
-  display: inline-flex;
-  color: var(--color-accent-dark);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .header__brand small {

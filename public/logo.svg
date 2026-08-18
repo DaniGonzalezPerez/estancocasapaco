@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bar Estanco Casa Paco - Desde siempre">
+  <defs>
+    <clipPath id="badge-clip">
+      <circle cx="100" cy="100" r="98" />
+    </clipPath>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="#2b1d14" />
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#c8862b" stroke-width="3" />
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#c8862b" stroke-width="1" opacity="0.6" />
+
+  <g fill="#f3e6d3" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="17" text-anchor="middle">
+    <text x="26.59" y="80.33" transform="rotate(-75 26.59 80.33)">B</text><text x="32.59" y="64.91" transform="rotate(-62.5 32.59 64.91)">A</text><text x="41.78" y="51.15" transform="rotate(-50 41.78 51.15)">R</text><text x="67.88" y="31.12" transform="rotate(-25 67.88 31.12)">C</text><text x="83.55" y="25.8" transform="rotate(-12.5 83.55 25.8)">A</text><text x="100" y="24" transform="rotate(0 100 24)">S</text><text x="116.45" y="25.8" transform="rotate(12.5 116.45 25.8)">A</text><text x="146.27" y="39.71" transform="rotate(37.5 146.27 39.71)">P</text><text x="158.22" y="51.15" transform="rotate(50 158.22 51.15)">A</text><text x="167.41" y="64.91" transform="rotate(62.5 167.41 64.91)">C</text><text x="173.41" y="80.33" transform="rotate(75 173.41 80.33)">O</text>
+  </g>
+
+  <g fill="#f3e6d3" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="15" text-anchor="middle">
+    <text x="31.12" y="132.12" transform="rotate(65 31.12 132.12)">D</text><text x="38.39" y="144.49" transform="rotate(54.17 38.39 144.49)">E</text><text x="47.85" y="155.28" transform="rotate(43.33 47.85 155.28)">S</text><text x="59.17" y="164.1" transform="rotate(32.5 59.17 164.1)">D</text><text x="71.94" y="170.63" transform="rotate(21.67 71.94 170.63)">E</text><text x="100" y="176" transform="rotate(0 100 176)">S</text><text x="114.28" y="174.65" transform="rotate(-10.83 114.28 174.65)">I</text><text x="128.06" y="170.63" transform="rotate(-21.67 128.06 170.63)">E</text><text x="140.83" y="164.1" transform="rotate(-32.5 140.83 164.1)">M</text><text x="152.15" y="155.28" transform="rotate(-43.33 152.15 155.28)">P</text><text x="161.61" y="144.49" transform="rotate(-54.17 161.61 144.49)">R</text><text x="168.88" y="132.12" transform="rotate(-65 168.88 132.12)">E</text>
+  </g>
+
+  <circle cx="100" cy="100" r="46" fill="none" stroke="#c8862b" stroke-width="1.5" opacity="0.55" />
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-weight="700" text-anchor="middle" dominant-baseline="central">
+    <text x="106" y="112" font-size="72" fill="#7a4a26" opacity="0.55">B</text>
+    <text x="103" y="109" font-size="72" fill="#a86c1e" opacity="0.75">B</text>
+    <text x="100" y="106" font-size="72" fill="#c8862b">B</text>
+    <text x="100" y="106" font-size="72" fill="none" stroke="#f3e6d3" stroke-width="1">B</text>
+  </g>
+</svg>
