@@ -220,7 +220,7 @@ function Hero() {
         <h1>Bar Estanco Casa Paco</h1>
         <p className="hero__lead">
           Desayunos, café de siempre, bocadillos y buen ambiente en el corazón de Cerredo.
-          Bar, cafetería y estanco en un mismo local, con trato familiar desde siempre.
+          Bar y estanco en un mismo local, con trato familiar desde siempre.
         </p>
         <a
           href={MAPS_REVIEWS_URL}
@@ -408,7 +408,7 @@ function LocationContact() {
 
         <div className="location__map">
           <iframe
-            title="Mapa - Cafetería Casa Paco / Estanco, Cerredo"
+            title="Mapa - Bar Casa Paco / Estanco, Cerredo"
             src="https://www.google.com/maps?q=Cafeter%C3%ADa+Casa+Paco+Estanco+Cerredo+Asturias&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
