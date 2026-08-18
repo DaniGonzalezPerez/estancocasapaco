@@ -84,6 +84,29 @@ const parseTime = (t) => {
   return h * 60 + m
 }
 
+const MADRID_TZ = 'Europe/Madrid'
+const MADRID_WEEKDAYS = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 }
+const madridFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: MADRID_TZ,
+  weekday: 'short',
+  hour: 'numeric',
+  minute: 'numeric',
+  hour12: false,
+})
+
+// Reads the wall-clock time in Spain (handles CET/CEST automatically) so
+// opening hours are correct regardless of the visitor's device timezone/clock.
+function getMadridNow(date) {
+  const map = {}
+  for (const part of madridFormatter.formatToParts(date)) {
+    map[part.type] = part.value
+  }
+  let hour = Number(map.hour)
+  if (hour === 24) hour = 0
+  const todayIndex = MADRID_WEEKDAYS[map.weekday]
+  return { todayIndex, nowMinutes: hour * 60 + Number(map.minute) }
+}
+
 function useOpenStatus(hours) {
   const [now, setNow] = useState(() => new Date())
 
@@ -93,9 +116,7 @@ function useOpenStatus(hours) {
   }, [])
 
   return useMemo(() => {
-    const jsDay = now.getDay()
-    const todayIndex = jsDay === 0 ? 6 : jsDay - 1
-    const nowMinutes = now.getHours() * 60 + now.getMinutes()
+    const { todayIndex, nowMinutes } = getMadridNow(now)
     const todayRanges = hours[todayIndex].ranges
 
     let closesAt = null
